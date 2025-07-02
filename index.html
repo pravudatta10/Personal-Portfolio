@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portfolio Website - Professional, Responsive, and Modern">
+  <meta name="keywords" content="Portfolio, Resume, Personal, Professional, Bootstrap, Responsive, Web Developer, Designer, Marriage Proposal">
+  <meta name="author" content="Your Name">
+  <title>Your Name | Personal Portfolio</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-theme="light">
+  <!-- Header & Navbar -->
+  <header class="sticky-top bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="image/image1.JPG" alt="Profile" class="rounded-circle me-2 profile-img">
+          <span class="fw-bold">Pravudatta Kar</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#family">Family</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li> -->
+            <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> -->
+          </ul>
+          <button id="themeToggle" class="btn btn-outline-secondary ms-3" title="Toggle light/dark mode"><i class="bi bi-moon"></i></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- About Me -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center align-items-center flex-column flex-md-row">
+        <div class="col-md-8 text-center text-md-start">
+          <h2 class="mb-2 fw-bold">Pravudatta Kar</h2>
+          <h5 class="text-muted mb-3">Senior Software Engineer</h5>
+          <p class="lead">Experienced Software Engineer at Birlasoft, currently working at CRISIL on an AI-driven microservice-based project. Expertise in building scalable, secure applications, optimizing system performance, and integrating AI models. Proficient in backend development, API design, and cloud technologies with 3+ years of experience in enterprise solutions.</p>
+          <div class="row g-2 mb-3">
+            <div class="col-12 col-md-6">
+              <span class="fw-semibold"><i class="bi bi-calendar-event me-2"></i>DOB: 06-11-2000</span>
+            </div>
+            <div class="col-12 col-md-6">
+              <span class="fw-semibold"><i class="bi bi-telephone me-2"></i>73288 61610</span>
+            </div>
+            <div class="col-12 col-md-6">
+              <span class="fw-semibold"><i class="bi bi-envelope me-2"></i>mrpravudatta10@gmail.com</span>
+            </div>
+            <div class="col-12 col-md-6">
+              <span class="fw-semibold"><i class="bi bi-geo-alt me-2"></i>Hyderabad, India</span>
+            </div>
+            <div class="col-12 col-md-6">
+              <span class="fw-semibold"><i class="bi bi-currency-rupee me-2"></i>11 LPA</span>
+            </div>
+            <div class="col-12">
+              <span class="fw-semibold"><i class="bi bi-house-door me-2"></i>At- Mirzapur, Po-Lankapada, Dist - Jagatsinghpur, Odisha</span>
+            </div>
+          </div>
+          <div class="mb-2">
+            <a href="https://github.com/pravudatta10" class="btn about-social-btn btn-sm me-2" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/in/pravudatta-kar" class="btn about-social-btn btn-sm" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Education</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Bachelor of Technology in Computer Science & Engineering</h5>
+              <p class="card-text">BPUT, Odisha, 2018-2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience -->
+  <section id="experience" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-center">Work Experience</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Senior Software Engineer</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Birlasoft | Sept-2024 - Present</h6>
+              <ul>
+                <li>Designed and optimized microservices for insurance and approval systems.</li>
+                <li>Improved deployment efficiency with CI/CD pipelines, reducing release cycle by 50%.</li>
+                <li>Integrated third-party APIs, ensuring seamless data exchange with minimal downtime.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Software Engineer</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Nichebit | July-2022 - Aug-2024</h6>
+              <ul>
+                <li>Developed scalable microservices with Spring Boot 3, secured with Spring Security 6.1 and JWT.</li>
+                <li>Implemented Spring WebFlux for real-time data streaming and asynchronous processing.</li>
+                <li>Integrated external APIs using RestTemplate and facilitated microservices communication via Feign Client.</li>
+                <li>Optimized database performance for Oracle & PostgreSQL, reducing query execution time by 30%.</li>
+                <li>Built dynamic Angular 17 applications, implementing routing, lazy loading, and component-based architecture.</li>
+                <li>Managed authentication & role-based access control with Spring Security 6.1 and Keycloak.</li>
+                <li>Implemented CI/CD pipelines with Jenkins, Bitbucket, and Git, reducing deployment time by 40%.</li>
+                <li>Conducted root cause analysis (RCA) and optimized system performance, reducing production issues by 25%.</li>
+                <li>Ensured high code quality using JUnit 5, Mockito, Log4j, and Prometheus monitoring.</li>
+                <li>Leveraged Kafka & RabbitMQ for event-driven microservices communication.</li>
+                <li>Automated report generation (Excel & PDF) using Jaspersoft, Apache POI, and PDFBox.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-center">Primary Skills</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="row g-4">
+            <div class="col-6 col-md-3 text-center">
+              <div class="p-4 shadow rounded bg-white h-100 skill-card">
+                <i class="fab fa-java fa-3x text-primary mb-2"></i>
+                <h6 class="fw-bold mt-2">Java</h6>
+                <div class="progress" style="height: 6px;">
+                  <div class="progress-bar bg-primary" style="width: 95%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="p-4 shadow rounded bg-white h-100 skill-card">
+                <i class="fas fa-leaf fa-3x text-success mb-2"></i>
+                <h6 class="fw-bold mt-2">Spring Boot</h6>
+                <div class="progress" style="height: 6px;">
+                  <div class="progress-bar bg-success" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="p-4 shadow rounded bg-white h-100 skill-card">
+                <i class="fab fa-angular fa-3x text-danger mb-2"></i>
+                <h6 class="fw-bold mt-2">Angular</h6>
+                <div class="progress" style="height: 6px;">
+                  <div class="progress-bar bg-danger" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="p-4 shadow rounded bg-white h-100 skill-card">
+                <i class="fas fa-database fa-3x text-info mb-2"></i>
+                <h6 class="fw-bold mt-2">SQL</h6>
+                <div class="progress" style="height: 6px;">
+                  <div class="progress-bar bg-info" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="p-4 shadow rounded bg-white h-100 skill-card">
+                <i class="fab fa-aws fa-3x text-warning mb-2"></i>
+                <h6 class="fw-bold mt-2">AWS</h6>
+                <div class="progress" style="height: 6px;">
+                  <div class="progress-bar bg-warning" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="p-4 shadow rounded bg-white h-100 skill-card">
+                <i class="fas fa-cubes fa-3x text-secondary mb-2"></i>
+                <h6 class="fw-bold mt-2">Microservice</h6>
+                <div class="progress" style="height: 6px;">
+                  <div class="progress-bar bg-secondary" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="p-4 shadow rounded bg-white h-100 skill-card">
+                <i class="fab fa-git-alt fa-3x text-danger mb-2"></i>
+                <h6 class="fw-bold mt-2">GIT</h6>
+                <div class="progress" style="height: 6px;">
+                  <div class="progress-bar bg-danger" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="p-4 shadow rounded bg-white h-100 skill-card">
+                <i class="fas fa-infinity fa-3x text-info mb-2"></i>
+                <h6 class="fw-bold mt-2">DevOps</h6>
+                <div class="progress" style="height: 6px;">
+                  <div class="progress-bar bg-info" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-10">
+          <div class="p-3 shadow rounded bg-white skill-card text-center">
+            <h5 class="fw-bold mb-2">Secondary Skills</h5>
+            <span class="text-secondary">Spring Security, Spring WebFlux, JPA, JWT, OAuth2, REST, JSON, Hibernate, Feign, Design Pattern, RabbitMQ, EC2, S3, Lambda, Maven, JUnit 5, Kafka, Mockito, ELK Stack, Kubernetes, Intellij, Docker, Prometheus, Jenkins, CI/CD, PostgreSQL, Log4j, VsCode, Apache POI, iText</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Executed -->
+  <section id="project" class="py-5 section-animate">
+    <div class="container">
+      <h2 class="mb-4 text-center">Project Executed</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Intelligen AI (Client: CRISIL)</h5>
+              <p><strong>Role:</strong> Full Stack Developer</p>
+              <p><strong>Technologies & Tools:</strong> Java, Spring Boot, Microservices, WebFlux, Spring Security, Angular 17, PostgreSQL, GIT, Postman, SonarQube, Python, Apache POI, Grafana, Kafka, Jenkins, CI/CD, AWS</p>
+              <p><strong>AI Models Used:</strong> LLaMA 3 8B, LLaMA 3.3 70B, GPT-3.5, GPT-4</p>
+              <p><strong>Project Overview:</strong> Designed and developed an AI-powered assistant for CRISIL, enabling intelligent document summarization (PPT, PDF, TXT), acting as a coding assistant, and supporting AI-driven interactions.</p>
+              <ul>
+                <li>Secured authentication & role-based access control with Keycloak, ensuring 100% compliance with security standards.</li>
+                <li>Designed a modular & scalable microservices architecture, enabling easy feature expansion.</li>
+                <li>Optimized real-time data streaming, improving user experience by 50% through Spring WebFlux.</li>
+                <li>Integrated Angular 17 with Java APIs using HttpClient, ensuring seamless frontend-backend communication.</li>
+                <li>Reduced API response time by 30% by optimizing SQL queries and implementing indexing strategies.</li>
+                <li>Generated automated Excel reports for chat history using Apache POI, reducing manual reporting effort by 60%.</li>
+                <li>Proactively identified security vulnerabilities using SonarQube, ensuring a 95% clean code score.</li>
+                <li>Implemented event-driven architecture with Kafka, enhancing system performance.</li>
+                <li>Automated CI/CD pipelines with Jenkins, reducing manual deployment effort by 40%.</li>
+                <li>Developing AI-powered solutions using LLM models, improving document processing efficiency by 40%.</li>
+                <li>Optimized API performance by 30% with SQL query tuning and caching strategies.</li>
+                <li>Integrated Kafka for event-driven architecture, reducing inter-service latency by 25%.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Family Section (replaces Achievements) -->
+  <section id="family" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">My Family</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Father</h5>
+              <p class="card-text">Name: Kalpataru Kar</p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Mother</h5>
+              <p class="card-text">Name: Mahamaya Kar</p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Brother</h5>
+              <p class="card-text">Name: Partha Kar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Slider -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Gallery</h2>
+      <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/image1.JPG" class="d-block w-100 rounded" alt="Family Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="image/image2.jpg" class="d-block w-100 rounded" alt="Family Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="image/image3.JPG" class="d-block w-100 rounded" alt="Family Image 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <!--
+  <section id="resume" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Resume</h2>
+      <a href="resume.pdf" class="btn btn-primary btn-lg" download><i class="bi bi-download"></i> Download My Resume</a>
+      <p class="mt-2 text-muted">(Upload your resume as <code>resume.pdf</code> in the project folder)</p>
+    </div>
+  </section>
+  -->
+
+  <!-- Contact Me -->
+  <!--
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Contact Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Send Message</button>
+            <a href="mailto:your.email@example.com" class="btn btn-outline-primary ms-2"><i class="bi bi-envelope"></i> Email</a>
+            <a href="https://wa.me/1234567890" class="btn btn-outline-success ms-2"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+      <div class="mb-2">
+        <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-github fa-lg"></i></a>
+        <a href="#" class="text-white me-3"><i class="fas fa-globe fa-lg"></i></a>
+      </div>
+      <p class="mb-1">&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+      <button id="backToTop" class="btn btn-outline-light btn-sm"><i class="bi bi-arrow-up"></i> Back to top</button>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
