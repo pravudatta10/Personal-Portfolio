@@ -27,4 +27,6 @@ function getExperience() {
 
     return `${yearsDecimal} years`;
 }
-document.getElementById('experienceValue').textContent = getExperience(); 
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("experienceValue").innerText = getExperience();
+});
