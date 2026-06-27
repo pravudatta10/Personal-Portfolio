@@ -2,50 +2,52 @@
    Professional Biodata - Custom JS
    ========================================== */
 
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Professional Biodata loaded successfully");
+(function () {
+  var dob = new Date(2000, 10, 6), now = new Date();
+  var age = now.getFullYear() - dob.getFullYear();
+  var m = now.getMonth() - dob.getMonth();
+  if (m < 0 || (m === 0 && now.getDate() < dob.getDate())) age--;
+  document.getElementById('ageValue').textContent = age + ' years';
+})();
 
-  const ageEl = document.getElementById("ageValue");
-  const expEl = document.getElementById("experienceValue");
+/* ── Experience ── */
+(function () {
+  var joined = new Date(2022, 6, 1), now = new Date();
+  var ms = now - joined;
+  var yr = Math.floor(ms / (1000 * 60 * 60 * 24 * 365.25));
+  var mo = Math.floor((ms % (1000 * 60 * 60 * 24 * 365.25)) / (1000 * 60 * 60 * 24 * 30.44));
+  document.getElementById('expValue').textContent = yr + ' yr' + (yr !== 1 ? 's' : '') + ' ' + mo + ' mo';
+})();
 
-  if (ageEl) ageEl.textContent = calculateAge();
-  if (expEl) expEl.textContent = calculateExperience();
-});
+/* ── Back to top ── */
+var btn = document.getElementById('backTop');
+window.addEventListener('scroll', function () {
+  btn.classList.toggle('show', window.scrollY > 280);
+}, { passive: true });
 
-/* -------------------------------
-   Calculate Experience (Decimal)
--------------------------------- */
-function calculateExperience() {
-  const startDate = new Date(2022, 6, 1); // 1 July 2022
-  const today = new Date();
-
-  let months =
-    (today.getFullYear() - startDate.getFullYear()) * 12 +
-    (today.getMonth() - startDate.getMonth());
-
-  if (today.getDate() < startDate.getDate()) {
-    months--;
-  }
-
-  return (months / 12).toFixed(1) + " years";
+/* ── Fade-in on scroll ── */
+var fades = document.querySelectorAll('.fade');
+if ('IntersectionObserver' in window) {
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.07 });
+  fades.forEach(function (f) { io.observe(f); });
+} else {
+  fades.forEach(function (f) { f.classList.add('on'); });
 }
 
-/* -------------------------------
-   Calculate Age (Rounded Years)
--------------------------------- */
-function calculateAge() {
-  const dob = new Date(2000, 10, 6); // 06 Nov 2000
-  const today = new Date();
-
-  let age = today.getFullYear() - dob.getFullYear();
-  const monthDiff = today.getMonth() - dob.getMonth();
-
-  if (
-    monthDiff < 0 ||
-    (monthDiff === 0 && today.getDate() < dob.getDate())
-  ) {
-    age--;
-  }
-
-  return age + " years";
-}
+/* ── Active nav pill ── */
+var pills = document.querySelectorAll('.nav-pill');
+var secs = document.querySelectorAll('section[id]');
+var navIo = new IntersectionObserver(function (entries) {
+  entries.forEach(function (e) {
+    if (e.isIntersecting) {
+      pills.forEach(function (p) { p.classList.remove('active'); });
+      var a = document.querySelector('.nav-pill[href="#' + e.target.id + '"]');
+      if (a) a.classList.add('active');
+    }
+  });
+}, { threshold: 0.35 });
+secs.forEach(function (s) { navIo.observe(s); });

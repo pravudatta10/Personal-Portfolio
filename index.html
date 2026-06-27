@@ -3,16 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <!-- Primary SEO -->
   <title>Pravudatta Kar | Professional Biodata</title>
   <meta name="description"
-    content="Pravudatta Kar - Java Consultant at Deloitte, Hyderabad. Professional biodata including personal, family, and career details.">
+    content="Pravudatta Kar - Software Engineer II at Deloitte, Hyderabad. Professional biodata including personal, family, and career details.">
+  <meta name="robots" content="index, follow">
 
-  <!-- Open Graph (WhatsApp / LinkedIn / Facebook Preview) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Pravudatta Kar | Professional Biodata">
-  <meta property="og:description" content="Java Consultant at Deloitte, Hyderabad. Professional biodata.">
+  <meta property="og:description" content="Software Engineer II at Deloitte, Hyderabad. Professional biodata.">
   <meta property="og:image" content="https://pravudatta10.github.io/Personal-Portfolio/images/profile.png">
   <meta property="og:url" content="https://pravudatta10.github.io/Personal-Portfolio/">
   <meta property="og:type" content="website">
@@ -20,241 +20,181 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Pravudatta Kar | Professional Biodata">
-  <meta name="twitter:description" content="Java Consultant at Deloitte, Hyderabad. Professional biodata.">
+  <meta name="twitter:description" content="Software Engineer II at Deloitte, Hyderabad.">
   <meta name="twitter:image" content="https://pravudatta10.github.io/Personal-Portfolio/images/profile.png">
-
-  <!-- Bootstrap 5.3 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
   <link href="./style.css" rel="stylesheet">
 
-  <!-- Google Analytics (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6RY6REKKM"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-
-    gtag('js', new Date());
-    gtag('config', 'G-M6RY6REKKM');
-  </script>
 </head>
 
+<body>
 
-<body class="bg-white">
-  <!-- Hero Section -->
-  <section id="hero" class="hero-section py-5 py-lg-6">
-    <div class="container">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-12 text-center">
-          <!-- Profile Image -->
-          <img src="./images/profile.png" alt="Pravudatta Kar" class="profile-img mb-4 img-fluid">
+  <!-- ── NAV ── -->
+  <nav class="top-nav" aria-label="Page sections">
+    <div class="nav-scroll">
+      <a class="nav-pill" href="#about">About</a>
+      <a class="nav-pill" href="#personal">Personal</a>
+      <a class="nav-pill" href="#professional">Professional</a>
+      <a class="nav-pill" href="#education">Education</a>
+      <a class="nav-pill" href="#family">Family</a>
+      <a class="nav-pill" href="#lifestyle">Lifestyle</a>
+      <a class="nav-pill" href="#contact">Contact</a>
+    </div>
+  </nav>
 
-          <!-- Name -->
-          <h1 class="display-3 fw-bold mb-3 text-dark">Pravudatta Kar</h1>
+  <!-- ── HERO ── -->
+  <section class="hero" id="hero">
+    <img src="./images/profile.png" alt="Pravudatta Kar" class="hero-photo">
+    <h1 class="hero-name">Pravudatta Kar</h1>
+    <div><span class="hero-badge">Software Engineer II</span></div>
+    <p class="hero-sub">Deloitte &nbsp;·&nbsp; Hyderabad</p>
+    <div class="cta-row">
+      <a href="https://wa.me/917328861610" target="_blank" rel="noopener" class="btn-wa">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+          <path
+            d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.533 5.862L.057 23.743a.5.5 0 0 0 .612.612l5.875-1.476A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.96 0-3.803-.567-5.357-1.547l-.383-.232-3.487.876.893-3.489-.252-.404A9.937 9.937 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+        </svg>
+        WhatsApp
+      </a>
+      <a href="tel:7328861610" class="btn-call">📞 Call</a>
+    </div>
+  </section>
 
-          <!-- Subtitle -->
-          <p class="h4 text-primary fw-500 mb-0">Java Consultant</p>
-          <p class="lead text-muted mb-4">Deloitte | Hyderabad</p>
+  <!-- ── ABOUT ── -->
+  <section class="sec alt fade" id="about">
+    <div class="sec-inner">
+      <h2 class="sec-title">About Me</h2>
+      <div class="card">
+        <div class="card-body">
+          <p style="color:var(--muted);font-size:0.92rem;line-height:1.75;margin-bottom:10px;">
+            Calm, responsible, and career-oriented individual with strong family values. Currently working as a Software
+            Engineer II at Deloitte, Hyderabad, building enterprise-grade Java solutions.
+          </p>
+          <p style="color:var(--muted);font-size:0.92rem;line-height:1.75;margin:0;">
+            I believe in balanced professional and personal growth, mutual respect, and building a life rooted in values
+            and purpose.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About Me Section -->
-  <section id="about" class="py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="section-title mb-4">About Me</h2>
-          <div class="card border-0 shadow-light rounded-4">
-            <div class="card-body p-5">
-              <p class="lead text-secondary lh-lg">Calm, responsible and career-oriented individual with strong family
-                values. I believe in balanced professional and personal growth with mutual respect.</p>
-            </div>
+  <!-- ── PERSONAL ── -->
+  <section class="sec fade" id="personal">
+    <div class="sec-inner">
+      <h2 class="sec-title">Personal Details</h2>
+      <div class="card">
+        <div class="card-body">
+          <div class="row-item">
+            <span class="rl">Date of Birth</span>
+            <span class="rv">06 Nov 2000</span>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gallery Section -->
-  <section id="gallery" class="py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="section-title mb-4">Photo Gallery</h2>
-          <div class="card border-0 shadow-light rounded-4">
-            <div class="card-body p-5 text-center">
-              <p class="lead text-secondary mb-4">View my collection of photos and moments in my Google Drive folder.
-              </p>
-              <a href="https://drive.google.com/drive/folders/1fqiGXu-Jyudtd7D-VOfuw7LQ-EEimMOi?usp=sharing"
-                target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg rounded-3">
-                <span class="me-2">📁</span> Open Gallery
-              </a>
-            </div>
+          <div class="row-item">
+            <span class="rl">Age</span>
+            <span class="rv" id="ageValue"></span>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Personal Details Section -->
-  <section id="personal" class="py-5">
-    <div class="container">
-      <div class="row mb-4">
-        <div class="col-12">
-          <h2 class="section-title">Personal Details</h2>
-        </div>
-      </div>
-      <div class="row g-4">
-        <!-- Column 1 -->
-        <div class="col-lg-6">
-          <div class="card border-0 shadow-light h-100 rounded-4">
-            <div class="card-body p-5">
-              <div class="detail-item mb-3">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Date of Birth</div>
-                <div class="detail-value h6 text-dark mt-1">06 Nov 2000</div>
-              </div>
-              <hr class="light">
-              <div class="detail-item mb-3">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Age</div>
-                <div class="detail-value h6 text-dark mt-1" id="ageValue"></div>
-              </div>
-              <hr class="light">
-              <div class="detail-item mb-3">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Height</div>
-                <div class="detail-value h6 text-dark mt-1">5'8"</div>
-              </div>
-              <hr class="light">
-              <div class="detail-item mb-3">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Blood Group</div>
-                <div class="detail-value h6 text-dark mt-1">AB+</div>
-              </div>
-              <hr class="light">
-              <div class="detail-item mb-3">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Religion</div>
-                <div class="detail-value h6 text-dark mt-1">Hindu</div>
-              </div>
-              <hr class="light">
-              <div class="detail-item">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Caste</div>
-                <div class="detail-value h6 text-dark mt-1">Brahmin</div>
-              </div>
-            </div>
+          <div class="row-item">
+            <span class="rl">Height</span>
+            <span class="rv">5′ 8″</span>
           </div>
-        </div>
-
-        <!-- Column 2 -->
-        <div class="col-lg-6">
-          <div class="card border-0 shadow-light h-100 rounded-4">
-            <div class="card-body p-5">
-              <div class="detail-item mb-3">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Gotra</div>
-                <div class="detail-value h6 text-dark mt-1">Kaundinya</div>
-              </div>
-              <hr class="light">
-              <div class="detail-item mb-3">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Rashi</div>
-                <div class="detail-value h6 text-dark mt-1">Kumbha (24/11)</div>
-              </div>
-              <!-- <hr class="light">
-              <div class="detail-item mb-3">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Nakshatras</div>
-                <div class="detail-value h6 text-dark mt-1">Coming soon</div>
-              </div> -->
-            </div>
+          <div class="row-item">
+            <span class="rl">Complexion</span>
+            <span class="rv">Wheatish</span>
+          </div>
+          <div class="row-item">
+            <span class="rl">Blood Group</span>
+            <span class="rv">AB+</span>
+          </div>
+          <div class="row-item">
+            <span class="rl">Marital Status</span>
+            <span class="rv">Never Married <span class="badge-ok">✓ Single</span></span>
+          </div>
+          <div class="row-item">
+            <span class="rl">Religion</span>
+            <span class="rv">Hindu</span>
+          </div>
+          <div class="row-item">
+            <span class="rl">Caste</span>
+            <span class="rv">Brahmin</span>
+          </div>
+          <div class="row-item">
+            <span class="rl">Gotra</span>
+            <span class="rv">Kaundinya</span>
+          </div>
+          <div class="row-item">
+            <span class="rl">Rashi</span>
+            <span class="rv">Kumbha (24/11)</span>
+          </div>
+          <div class="row-item">
+            <span class="rl">Nakshatra</span>
+            <span class="rv italic">To be updated</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Education Section -->
-  <section id="education" class="py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="section-title mb-4">Education</h2>
-
-          <!-- B.Tech -->
-          <div class="card border-0 shadow-light mb-4 rounded-4">
-            <div class="card-body p-5">
-              <div class="d-flex align-items-center">
-                <div class="flex-grow-1">
-                  <h5 class="card-title text-dark mb-2">B.Tech – Computer Science (EATM)</h5>
-                  <p class="text-secondary mb-0">2018 – 2022</p>
-                </div>
-              </div>
-            </div>
+  <!-- ── PROFESSIONAL ── -->
+  <section class="sec alt fade" id="professional">
+    <div class="sec-inner">
+      <h2 class="sec-title">Professional Details</h2>
+      <div class="card">
+        <div class="card-body">
+          <div class="row-item">
+            <span class="rl">Designation</span>
+            <span class="rv blue">Software Engineer II</span>
           </div>
-
-          <!-- 12th -->
-          <div class="card border-0 shadow-light mb-4 rounded-4">
-            <div class="card-body p-5">
-              <div class="d-flex align-items-center">
-                <div class="flex-grow-1">
-                  <h5 class="card-title text-dark mb-2">12th – CHSE Odisha</h5>
-                  <p class="text-secondary mb-0">2016 – 2018</p>
-                </div>
-              </div>
-            </div>
+          <div class="row-item">
+            <span class="rl">Company</span>
+            <span class="rv">Deloitte</span>
           </div>
-
-          <!-- 10th -->
-          <div class="card border-0 shadow-light rounded-4">
-            <div class="card-body p-5">
-              <div class="d-flex align-items-center">
-                <div class="flex-grow-1">
-                  <h5 class="card-title text-dark mb-2">10th – BSE Odisha</h5>
-                  <p class="text-secondary mb-0">2015 – 2016</p>
-                </div>
-              </div>
-            </div>
+          <div class="row-item">
+            <span class="rl">Location</span>
+            <span class="rv">Hyderabad</span>
+          </div>
+          <div class="row-item">
+            <span class="rl">Experience</span>
+            <span class="rv" id="expValue"></span>
+          </div>
+          <div class="row-item">
+            <span class="rl">Sector</span>
+            <span class="rv">Private</span>
+          </div>
+          <div class="row-item">
+            <span class="rl">Annual CTC</span>
+            <span class="rv green">₹10+ LPA</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Professional Details Section -->
-  <section id="professional" class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="section-title mb-4">Professional Details</h2>
-
-          <div class="card border-0 shadow-light rounded-4">
-            <div class="card-body p-5">
-              <div class="detail-item mb-4">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Designation</div>
-                <div class="detail-value h6 text-primary mt-1">Java Consultant</div>
-              </div>
-              <hr class="light">
-              <div class="detail-item mb-4">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Company</div>
-                <div class="detail-value h6 text-dark mt-1">Deloitte</div>
-              </div>
-              <hr class="light">
-              <div class="detail-item mb-4">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Location</div>
-                <div class="detail-value h6 text-dark mt-1">Hyderabad</div>
-              </div>
-              <hr class="light">
-              <div class="detail-item mb-4">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Experience</div>
-                <div id="experienceValue" class="detail-value h6 text-dark mt-1"></div>
-              </div>
-              <hr class="light">
-              <div class="detail-item mb-4">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Employment Type</div>
-                <div class="detail-value h6 text-dark mt-1">Private Sector</div>
-              </div>
-              <hr class="light">
-              <div class="detail-item">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Annual Income</div>
-                <div class="detail-value h6 text-success mt-1">₹10+ LPA</div>
-              </div>
+  <!-- ── EDUCATION ── -->
+  <section class="sec fade" id="education">
+    <div class="sec-inner">
+      <h2 class="sec-title">Education</h2>
+      <div class="card">
+        <div class="card-body">
+          <div class="edu-row">
+            <div class="edu-icon">🎓</div>
+            <div>
+              <div class="edu-deg">B.Tech – Computer Science (EATM)</div>
+              <div class="edu-yr">2018 – 2022</div>
+            </div>
+          </div>
+          <div class="edu-row">
+            <div class="edu-icon">📘</div>
+            <div>
+              <div class="edu-deg">12th – CHSE Odisha</div>
+              <div class="edu-yr">2016 – 2018</div>
+            </div>
+          </div>
+          <div class="edu-row">
+            <div class="edu-icon">📗</div>
+            <div>
+              <div class="edu-deg">10th – BSE Odisha</div>
+              <div class="edu-yr">2015 – 2016</div>
             </div>
           </div>
         </div>
@@ -262,125 +202,152 @@
     </div>
   </section>
 
-  <!-- Family Details Section -->
-  <section id="family" class="py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="section-title mb-4">Family Details</h2>
-
-          <div class="card border-0 shadow-light rounded-4">
-            <div class="card-body p-5">
-              <div class="detail-item mb-4">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Father</div>
-                <div class="detail-value h6 text-dark mt-1">Kalpataru Kar (Shopkeeper & Farmer)</div>
-              </div>
-              <hr class="light">
-              <div class="detail-item mb-4">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Mother</div>
-                <div class="detail-value h6 text-dark mt-1">Mahamaya Kar (Homemaker)</div>
-              </div>
-              <hr class="light">
-              <div class="detail-item mb-4">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Brother</div>
-                <div class="detail-value h6 text-dark mt-1">Partha Kar (AHL in Veterinary Field)</div>
-              </div>
-              <hr class="light">
-              <div class="detail-item">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Residence</div>
-                <div class="detail-value h6 text-dark mt-1"> Mirjapur, Lankapara, Jagatsinghapur, Odisha</div>
-              </div>
-            </div>
+  <!-- ── FAMILY ── -->
+  <section class="sec alt fade" id="family">
+    <div class="sec-inner">
+      <h2 class="sec-title">Family Details</h2>
+      <div class="card">
+        <div class="card-body">
+          <div class="row-item">
+            <span class="rl">Father</span>
+            <span class="rv">Kalpataru Kar
+              <br><small style="font-weight:400;color:var(--muted);font-size:0.8rem;">Shopkeeper &amp; Farmer</small>
+            </span>
+          </div>
+          <div class="row-item">
+            <span class="rl">Mother</span>
+            <span class="rv">Mahamaya Kar
+              <br><small style="font-weight:400;color:var(--muted);font-size:0.8rem;">Homemaker</small>
+            </span>
+          </div>
+          <div class="row-item">
+            <span class="rl">Brother</span>
+            <span class="rv">Partha Kar
+              <br><small style="font-weight:400;color:var(--muted);font-size:0.8rem;">AHL – Veterinary Field</small>
+            </span>
+          </div>
+          <div class="row-item">
+            <span class="rl">Native</span>
+            <span class="rv">Mirjapur, Lankapara,<br>Jagatsinghapur, Odisha</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!--Lifestyle & Personality -->
-  <section id="lifestyle" class="py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="section-title mb-4">Lifestyle & Personality</h2>
-
-          <div class="card border-0 shadow-light rounded-4">
-            <div class="card-body p-5">
-              <div class="detail-item mb-4">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Food Preference</div>
-                <div class="detail-value h6 text-dark mt-1">Vegetarian</div>
-              </div>
-              <hr class="light">
-              <div class="detail-item mb-4">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Habits</div>
-                <div class="detail-value h6 text-dark mt-1">Non-Smoker, Non-Drinker</div>
-              </div>
-              <hr class="light">
-              <div class="detail-item mb-4">
-                <div class="detail-label text-secondary small text-uppercase fw-bold">Hobbies</div>
-                <div class="detail-value h6 text-dark mt-1">Playing Cricket, Table Tennis, Chess</div>
-              </div>
-            </div>
+  <!-- ── LIFESTYLE ── -->
+  <section class="sec fade" id="lifestyle">
+    <div class="sec-inner">
+      <h2 class="sec-title">Lifestyle &amp; Personality</h2>
+      <div class="card">
+        <div class="card-body">
+          <div class="row-item">
+            <span class="rl">Food</span>
+            <span class="rv">🥦 Vegetarian
+              <span style="font-weight:400;color:var(--muted);font-size:0.78rem;display:block;">(personal choice)</span>
+            </span>
+          </div>
+          <div class="row-item">
+            <span class="rl">Habits</span>
+            <span class="rv">Non-Smoker · Non-Drinker</span>
+          </div>
+          <div class="row-item">
+            <span class="rl">Hobbies</span>
+            <span class="rv">🏏 Cricket · 🏓 Table Tennis · ♟ Chess</span>
           </div>
         </div>
       </div>
+
+      <!-- Dietary flexibility note -->
+      <div class="food-note">
+        <span class="food-note-icon">💡</span>
+        <p class="food-note-text">
+          I follow a vegetarian diet by personal choice, not strict religious practice.
+          I am completely comfortable if my partner or family members eat non-vegetarian food —
+          <strong>no restrictions at home.</strong> Food is a personal choice and I fully respect that.
+        </p>
+      </div>
     </div>
   </section>
-  <!-- Contact Section -->
-  <section id="contact" class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 mx-auto">
-          <h2 class="section-title">Get In Touch</h2>
-          <div class="card border-0 shadow-light rounded-4">
-            <div class="card-body p-5 text-center">
-              <div class="mb-4">
-                <p class="text-secondary small text-uppercase fw-bold mb-2">Phone</p>
-                <p class="h5 text-dark mb-0">7328861610</p>
-              </div>
-              <div class="mb-4">
-                <p class="text-secondary small text-uppercase fw-bold mb-2">Email</p>
-                <p class="h5 text-dark mb-0">mrpravudatta.kar@gmail.com</p>
-              </div>
-              <div class="mb-4">
-                <p class="text-secondary small text-uppercase fw-bold mb-2">LinkedIn</p>
-                <a href="https://www.linkedin.com/in/pravudatta-kar/" target="_blank" rel="noopener noreferrer"
-                  class="h5 text-decoration-none text-dark">
-                  linkedin.com/in/pravudatta-kar
-                </a>
-              </div>
-              <div class="mb-4">
-                <p class="text-secondary small text-uppercase fw-bold mb-2">Instagram</p>
-                <a href="https://www.instagram.com/mr.pravudatta/" target="_blank" rel="noopener noreferrer"
-                  class="h5 text-decoration-none text-dark">
-                  instagram.com/mr.pravudatta
-                </a>
-              </div>
-              <hr class="light">
-            </div>
-          </div>
+
+  <!-- ── GALLERY ── -->
+  <section class="sec alt fade" id="gallery">
+    <div class="sec-inner" style="text-align:center;">
+      <h2 class="sec-title">Photo Gallery</h2>
+      <div class="card">
+        <div class="card-body" style="text-align:center;padding:24px 16px;">
+          <p style="color:var(--muted);font-size:0.9rem;margin-bottom:18px;">Browse photos and moments in my Google
+            Drive folder.</p>
+          <a href="https://drive.google.com/drive/folders/1fqiGXu-Jyudtd7D-VOfuw7LQ-EEimMOi?usp=sharing" target="_blank"
+            rel="noopener noreferrer" class="gallery-btn">
+            📁 &nbsp;Open Gallery
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-5 mt-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- <div class="col-md-6">
-          <h6 class="text-light fw-bold">Pravudatta Kar</h6>
-          <p class="text-secondary small mb-0">Professional Marriage Biodata</p>
-        </div> -->
-        <div class="col-md-6 text-md-end text-center mt-3 mt-md-0">
-          <p class="text-secondary small mb-0">&copy; 2026 Pravudatta Kar. All rights reserved.</p>
+  <!-- ── CONTACT ── -->
+  <section class="sec fade" id="contact">
+    <div class="sec-inner">
+      <h2 class="sec-title">Get In Touch</h2>
+      <div class="card">
+        <div class="card-body">
+
+          <a href="tel:7328861610" class="contact-row">
+            <div class="c-icon" style="background:#EFF6FF;">📞</div>
+            <div>
+              <div class="c-label">Phone</div>
+              <div class="c-value">7328861610</div>
+            </div>
+          </a>
+
+          <a href="https://wa.me/917328861610" target="_blank" rel="noopener" class="contact-row">
+            <div class="c-icon" style="background:#F0FDF4;">💬</div>
+            <div>
+              <div class="c-label">WhatsApp</div>
+              <div class="c-value">+91 73288 61610</div>
+            </div>
+          </a>
+
+          <a href="mailto:mrpravudatta.kar@gmail.com" class="contact-row">
+            <div class="c-icon" style="background:#FFF7ED;">✉️</div>
+            <div>
+              <div class="c-label">Email</div>
+              <div class="c-value">mrpravudatta.kar@gmail.com</div>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/pravudatta-kar/" target="_blank" rel="noopener noreferrer"
+            class="contact-row">
+            <div class="c-icon" style="background:#EFF6FF;">🔗</div>
+            <div>
+              <div class="c-label">LinkedIn</div>
+              <div class="c-value">linkedin.com/in/pravudatta-kar</div>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/mr.pravudatta/" target="_blank" rel="noopener noreferrer"
+            class="contact-row">
+            <div class="c-icon" style="background:#FDF4FF;">📸</div>
+            <div>
+              <div class="c-label">Instagram</div>
+              <div class="c-value">instagram.com/mr.pravudatta</div>
+            </div>
+          </a>
+
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>© 2026 <b>Pravudatta Kar</b>. All rights reserved.</p>
   </footer>
 
-  <!-- Bootstrap 5.3 JS CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- ── BACK TO TOP ── -->
+  <button id="backTop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
   <!-- Custom JS -->
   <script src="./script.js"></script>
