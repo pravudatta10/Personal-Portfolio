@@ -1,7 +1,8 @@
 /* ==========================================
-   Professional Biodata - Custom JS
+   Premium Digital Biodata - Custom JS
    ========================================== */
 
+/* ── Age ── */
 (function () {
   var dob = new Date(2000, 10, 6), now = new Date();
   var age = now.getFullYear() - dob.getFullYear();
@@ -19,10 +20,38 @@
   document.getElementById('expValue').textContent = yr + ' yr' + (yr !== 1 ? 's' : '') + ' ' + mo + ' mo';
 })();
 
+/* ── Theme toggle (default: dark, remembers choice, no system auto-switch) ── */
+(function () {
+  var root = document.documentElement;
+  var btn = document.getElementById('themeToggle');
+  var icon = document.getElementById('themeIcon');
+  var metaTheme = document.querySelector('meta[name="theme-color"]');
+
+  function isLight() { return root.getAttribute('data-theme') === 'light'; }
+
+  function syncIcon() {
+    icon.textContent = isLight() ? '🌙' : '☀️';
+    if (metaTheme) metaTheme.setAttribute('content', isLight() ? '#F7F4EE' : '#0F172A');
+  }
+
+  syncIcon();
+
+  btn.addEventListener('click', function () {
+    if (isLight()) {
+      root.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      root.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+    }
+    syncIcon();
+  });
+})();
+
 /* ── Back to top ── */
-var btn = document.getElementById('backTop');
+var btnTop = document.getElementById('backTop');
 window.addEventListener('scroll', function () {
-  btn.classList.toggle('show', window.scrollY > 280);
+  btnTop.classList.toggle('show', window.scrollY > 280);
 }, { passive: true });
 
 /* ── Fade-in on scroll ── */

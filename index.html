@@ -3,27 +3,42 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Pravudatta Kar | Professional Biodata</title>
+  <!-- Apply saved theme before first paint (default: dark). No system-preference auto-switch. -->
+  <script>
+    (function () {
+      var saved = localStorage.getItem('theme');
+      if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    })();
+  </script>
+
+  <title>Pravudatta Kar | Marriage Biodata</title>
   <meta name="description"
-    content="Pravudatta Kar - Software Engineer II at Deloitte, Hyderabad. Professional biodata including personal, family, and career details.">
+    content="Pravudatta Kar - Software Engineer II at Deloitte, Hyderabad. Originally from Odisha. A digital marriage biodata with personal, family, and career details.">
   <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0F172A">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Pravudatta Kar | Professional Biodata">
-  <meta property="og:description" content="Software Engineer II at Deloitte, Hyderabad. Professional biodata.">
-  <meta property="og:image" content="https://pravudatta10.github.io/Personal-Portfolio/images/profile.png">
+  <meta property="og:title" content="Pravudatta Kar | Marriage Biodata">
+  <meta property="og:description" content="Software Engineer II at Deloitte, Hyderabad · Originally from Odisha.">
+  <meta property="og:image" content="https://pravudatta10.github.io/Personal-Portfolio/images/profile.jpg">
   <meta property="og:url" content="https://pravudatta10.github.io/Personal-Portfolio/">
   <meta property="og:type" content="website">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Pravudatta Kar | Professional Biodata">
-  <meta name="twitter:description" content="Software Engineer II at Deloitte, Hyderabad.">
-  <meta name="twitter:image" content="https://pravudatta10.github.io/Personal-Portfolio/images/profile.png">
-  <link href="./style.css" rel="stylesheet">
+  <meta name="twitter:title" content="Pravudatta Kar | Marriage Biodata">
+  <meta name="twitter:description" content="Software Engineer II at Deloitte, Hyderabad · Originally from Odisha.">
+  <meta name="twitter:image" content="https://pravudatta10.github.io/Personal-Portfolio/images/profile.jpg">
 
+  <!-- Favicon: inline SVG, no extra image request -->
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230F172A'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-weight='700' font-size='28' fill='%23C9A66B' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
+
+  <link rel="canonical" href="https://pravudatta10.github.io/Personal-Portfolio/">
+
+  <link href="./style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -33,23 +48,32 @@
     <div class="nav-scroll">
       <a class="nav-pill" href="#about">About</a>
       <a class="nav-pill" href="#personal">Personal</a>
-      <a class="nav-pill" href="#professional">Professional</a>
+      <a class="nav-pill" href="#career">Career</a>
       <a class="nav-pill" href="#education">Education</a>
       <a class="nav-pill" href="#family">Family</a>
       <a class="nav-pill" href="#lifestyle">Lifestyle</a>
       <a class="nav-pill" href="#contact">Contact</a>
     </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme" title="Toggle theme">
+      <span id="themeIcon" aria-hidden="true">☀</span>
+    </button>
   </nav>
 
   <!-- ── HERO ── -->
   <section class="hero" id="hero">
-    <img src="./images/profile.png" alt="Pravudatta Kar" class="hero-photo">
+    <img src="./images/profile.jpg" alt="Pravudatta Kar" class="hero-photo" width="132" height="132">
     <h1 class="hero-name">Pravudatta Kar</h1>
-    <div><span class="hero-badge">Software Engineer II</span></div>
-    <p class="hero-sub">Deloitte &nbsp;·&nbsp; Hyderabad</p>
+    <p class="hero-badge">Software Engineer II</p>
+    <p class="hero-sub">Deloitte &nbsp;·&nbsp; Hyderabad, Telangana</p>
+    <p class="hero-native">Native place: Jagatsinghpur, Odisha</p>
+
+    <p class="trait-line">
+      <span>Career Focused</span><span class="sep">/</span><span>Family Values</span><span class="sep">/</span><span>Simple Living</span>
+    </p>
+
     <div class="cta-row">
       <a href="https://wa.me/917328861610" target="_blank" rel="noopener" class="btn-wa">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path
             d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
           <path
@@ -57,23 +81,24 @@
         </svg>
         WhatsApp
       </a>
-      <a href="tel:7328861610" class="btn-call">📞 Call</a>
+      <a href="tel:7328861610" class="btn-call">Call</a>
     </div>
   </section>
 
   <!-- ── ABOUT ── -->
   <section class="sec alt fade" id="about">
     <div class="sec-inner">
+      <span class="eyebrow">Introduction</span>
       <h2 class="sec-title">About Me</h2>
       <div class="card">
         <div class="card-body">
-          <p style="color:var(--muted);font-size:0.92rem;line-height:1.75;margin-bottom:10px;">
-            Calm, responsible, and career-oriented individual with strong family values. Currently working as a Software
-            Engineer II at Deloitte, Hyderabad, building enterprise-grade Java solutions.
+          <p class="lede">
+            Calm, responsible, and career-oriented, with strong family values at the core of who I am.
+            I currently work as a Software Engineer II at Deloitte, Hyderabad.
           </p>
-          <p style="color:var(--muted);font-size:0.92rem;line-height:1.75;margin:0;">
-            I believe in balanced professional and personal growth, mutual respect, and building a life rooted in values
-            and purpose.
+          <p class="lede">
+            I believe in balanced professional and personal growth, mutual respect, and building a life
+            rooted in values and purpose — with room for both ambition and simplicity.
           </p>
         </div>
       </div>
@@ -83,7 +108,8 @@
   <!-- ── PERSONAL ── -->
   <section class="sec fade" id="personal">
     <div class="sec-inner">
-      <h2 class="sec-title">Personal Details</h2>
+      <span class="eyebrow">Personal Details</span>
+      <h2 class="sec-title">The Basics</h2>
       <div class="card">
         <div class="card-body">
           <div class="row-item">
@@ -108,7 +134,7 @@
           </div>
           <div class="row-item">
             <span class="rl">Marital Status</span>
-            <span class="rv">Never Married <span class="badge-ok">✓ Single</span></span>
+            <span class="rv">Never Married<span class="badge-ok">· Single</span></span>
           </div>
           <div class="row-item">
             <span class="rl">Religion</span>
@@ -135,15 +161,16 @@
     </div>
   </section>
 
-  <!-- ── PROFESSIONAL ── -->
-  <section class="sec alt fade" id="professional">
+  <!-- ── CAREER ── -->
+  <section class="sec alt fade" id="career">
     <div class="sec-inner">
-      <h2 class="sec-title">Professional Details</h2>
+      <span class="eyebrow">Career</span>
+      <h2 class="sec-title">What I Do</h2>
       <div class="card">
         <div class="card-body">
           <div class="row-item">
-            <span class="rl">Designation</span>
-            <span class="rv blue">Software Engineer II</span>
+            <span class="rl">Position</span>
+            <span class="rv gold">Software Engineer II</span>
           </div>
           <div class="row-item">
             <span class="rl">Company</span>
@@ -158,13 +185,18 @@
             <span class="rv" id="expValue"></span>
           </div>
           <div class="row-item">
+            <span class="rl">Work Domain</span>
+            <span class="rv">IT Services &amp; Consulting</span>
+          </div>
+          <div class="row-item">
             <span class="rl">Sector</span>
             <span class="rv">Private</span>
           </div>
-          <div class="row-item">
-            <span class="rl">Annual CTC</span>
-            <span class="rv green">₹12+ LPA</span>
-          </div>
+          <p class="career-summary">
+            I work in enterprise technology consulting, helping build reliable, large-scale
+            business solutions for global clients — steady, well-established work with good
+            long-term growth.
+          </p>
         </div>
       </div>
     </div>
@@ -173,27 +205,30 @@
   <!-- ── EDUCATION ── -->
   <section class="sec fade" id="education">
     <div class="sec-inner">
-      <h2 class="sec-title">Education</h2>
+      <span class="eyebrow">Education</span>
+      <h2 class="sec-title">Academic Background</h2>
       <div class="card">
         <div class="card-body">
-          <div class="edu-row">
-            <div class="edu-icon">🎓</div>
-            <div>
-              <div class="edu-deg">B.Tech – Computer Science (EATM)</div>
+          <div class="edu-list">
+            <div class="edu-row">
+              <div>
+                <div class="edu-deg">B.Tech — Computer Science</div>
+                <div class="edu-school">EATM, Bhubaneswar</div>
+              </div>
               <div class="edu-yr">2018 – 2022</div>
             </div>
-          </div>
-          <div class="edu-row">
-            <div class="edu-icon">📘</div>
-            <div>
-              <div class="edu-deg">12th – CHSE Odisha</div>
+            <div class="edu-row">
+              <div>
+                <div class="edu-deg">12th Standard</div>
+                <div class="edu-school">CHSE, Odisha</div>
+              </div>
               <div class="edu-yr">2016 – 2018</div>
             </div>
-          </div>
-          <div class="edu-row">
-            <div class="edu-icon">📗</div>
-            <div>
-              <div class="edu-deg">10th – BSE Odisha</div>
+            <div class="edu-row">
+              <div>
+                <div class="edu-deg">10th Standard</div>
+                <div class="edu-school">BSE, Odisha</div>
+              </div>
               <div class="edu-yr">2015 – 2016</div>
             </div>
           </div>
@@ -205,30 +240,43 @@
   <!-- ── FAMILY ── -->
   <section class="sec alt fade" id="family">
     <div class="sec-inner">
+      <span class="eyebrow">Family</span>
       <h2 class="sec-title">Family Details</h2>
       <div class="card">
         <div class="card-body">
-          <div class="row-item">
-            <span class="rl">Father</span>
-            <span class="rv">Kalpataru Kar
-              <br><small style="font-weight:400;color:var(--muted);font-size:0.8rem;">Shopkeeper &amp; Farmer</small>
-            </span>
-          </div>
-          <div class="row-item">
-            <span class="rl">Mother</span>
-            <span class="rv">Mahamaya Kar
-              <br><small style="font-weight:400;color:var(--muted);font-size:0.8rem;">Homemaker</small>
-            </span>
-          </div>
-          <div class="row-item">
-            <span class="rl">Brother</span>
-            <span class="rv">Partha Kar
-              <br><small style="font-weight:400;color:var(--muted);font-size:0.8rem;">AHL – Veterinary Field</small>
-            </span>
-          </div>
-          <div class="row-item">
-            <span class="rl">Native</span>
-            <span class="rv">Mirjapur, Lankapara,<br>Jagatsinghapur, Odisha</span>
+          <div class="family-grid">
+            <div class="fam-row">
+              <div class="fam-avatar">K</div>
+              <div>
+                <div class="fam-rel">Father</div>
+                <div class="fam-name">Kalpataru Kar</div>
+                <div class="fam-occ">Shopkeeper &amp; Farmer</div>
+              </div>
+            </div>
+            <div class="fam-row">
+              <div class="fam-avatar">M</div>
+              <div>
+                <div class="fam-rel">Mother</div>
+                <div class="fam-name">Mahamaya Kar</div>
+                <div class="fam-occ">Homemaker</div>
+              </div>
+            </div>
+            <div class="fam-row">
+              <div class="fam-avatar">P</div>
+              <div>
+                <div class="fam-rel">Brother</div>
+                <div class="fam-name">Partha Kar</div>
+                <div class="fam-occ">AHL — Veterinary Field</div>
+              </div>
+            </div>
+            <div class="fam-row">
+              <div class="fam-avatar">N</div>
+              <div>
+                <div class="fam-rel">Native Place</div>
+                <div class="fam-name">Mirjapur, Lankapara</div>
+                <div class="fam-occ">Jagatsinghpur, Odisha</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -238,49 +286,43 @@
   <!-- ── LIFESTYLE ── -->
   <section class="sec fade" id="lifestyle">
     <div class="sec-inner">
-      <h2 class="sec-title">Lifestyle &amp; Personality</h2>
+      <span class="eyebrow">Lifestyle</span>
+      <h2 class="sec-title">Day to Day</h2>
       <div class="card">
         <div class="card-body">
-          <div class="row-item">
-            <span class="rl">Food</span>
-            <span class="rv">🥦 Vegetarian
-              <span style="font-weight:400;color:var(--muted);font-size:0.78rem;display:block;">(personal choice)</span>
-            </span>
+          <div class="life-row">
+            <span class="life-label">Food</span>
+            <span class="life-value">Vegetarian (by choice)</span>
           </div>
-          <div class="row-item">
-            <span class="rl">Habits</span>
-            <span class="rv">Non-Smoker · Non-Drinker</span>
+          <div class="life-row">
+            <span class="life-label">Habits</span>
+            <span class="life-value">Non-Smoker · Non-Drinker</span>
           </div>
-          <div class="row-item">
-            <span class="rl">Hobbies</span>
-            <span class="rv">🏏 Cricket · 🏓 Table Tennis · ♟ Chess</span>
+          <div class="life-row">
+            <span class="life-label">Hobbies</span>
+            <span class="life-value">Cricket · Table Tennis · Chess</span>
           </div>
+          <p class="note">
+            I follow a vegetarian diet by personal choice, not strict religious practice.
+            I'm completely comfortable if my partner or family members eat non-vegetarian food —
+            <strong>no restrictions at home.</strong> Food is a personal choice and I fully respect that.
+          </p>
         </div>
-      </div>
-
-      <!-- Dietary flexibility note -->
-      <div class="food-note">
-        <span class="food-note-icon">💡</span>
-        <p class="food-note-text">
-          I follow a vegetarian diet by personal choice, not strict religious practice.
-          I am completely comfortable if my partner or family members eat non-vegetarian food —
-          <strong>no restrictions at home.</strong> Food is a personal choice and I fully respect that.
-        </p>
       </div>
     </div>
   </section>
 
   <!-- ── GALLERY ── -->
   <section class="sec alt fade" id="gallery">
-    <div class="sec-inner" style="text-align:center;">
+    <div class="sec-inner">
+      <span class="eyebrow">Gallery</span>
       <h2 class="sec-title">Photo Gallery</h2>
       <div class="card">
-        <div class="card-body" style="text-align:center;padding:24px 16px;">
-          <p style="color:var(--muted);font-size:0.9rem;margin-bottom:18px;">Browse photos and moments in my Google
-            Drive folder.</p>
+        <div class="card-body" style="text-align:center;">
+          <p class="lede" style="margin-bottom:20px;">Browse photos and moments in my Google Drive folder.</p>
           <a href="https://drive.google.com/drive/folders/1fqiGXu-Jyudtd7D-VOfuw7LQ-EEimMOi?usp=sharing" target="_blank"
             rel="noopener noreferrer" class="gallery-btn">
-            📁 &nbsp;Open Gallery
+            Open Gallery
           </a>
         </div>
       </div>
@@ -290,28 +332,26 @@
   <!-- ── CONTACT ── -->
   <section class="sec fade" id="contact">
     <div class="sec-inner">
+      <span class="eyebrow">Contact</span>
       <h2 class="sec-title">Get In Touch</h2>
+
+      <div class="contact-primary">
+        <a href="https://wa.me/917328861610" target="_blank" rel="noopener" class="btn-wa">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+            <path
+              d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.533 5.862L.057 23.743a.5.5 0 0 0 .612.612l5.875-1.476A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.96 0-3.803-.567-5.357-1.547l-.383-.232-3.487.876.893-3.489-.252-.404A9.937 9.937 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+          </svg>
+          WhatsApp
+        </a>
+        <a href="tel:7328861610" class="btn-call">Call</a>
+      </div>
+
       <div class="card">
         <div class="card-body">
 
-          <a href="tel:7328861610" class="contact-row">
-            <div class="c-icon" style="background:#EFF6FF;">📞</div>
-            <div>
-              <div class="c-label">Phone</div>
-              <div class="c-value">7328861610</div>
-            </div>
-          </a>
-
-          <a href="https://wa.me/917328861610" target="_blank" rel="noopener" class="contact-row">
-            <div class="c-icon" style="background:#F0FDF4;">💬</div>
-            <div>
-              <div class="c-label">WhatsApp</div>
-              <div class="c-value">+91 73288 61610</div>
-            </div>
-          </a>
-
           <a href="mailto:mrpravudatta.kar@gmail.com" class="contact-row">
-            <div class="c-icon" style="background:#FFF7ED;">✉️</div>
             <div>
               <div class="c-label">Email</div>
               <div class="c-value">mrpravudatta.kar@gmail.com</div>
@@ -320,7 +360,6 @@
 
           <a href="https://www.linkedin.com/in/pravudatta-kar/" target="_blank" rel="noopener noreferrer"
             class="contact-row">
-            <div class="c-icon" style="background:#EFF6FF;">🔗</div>
             <div>
               <div class="c-label">LinkedIn</div>
               <div class="c-value">linkedin.com/in/pravudatta-kar</div>
@@ -329,7 +368,6 @@
 
           <a href="https://www.instagram.com/kar.pravudatta/" target="_blank" rel="noopener noreferrer"
             class="contact-row">
-            <div class="c-icon" style="background:#FDF4FF;">📸</div>
             <div>
               <div class="c-label">Instagram</div>
               <div class="c-value">instagram.com/kar.pravudatta</div>
